@@ -1,12 +1,22 @@
-Rebuilding Process
+# Rebuilding Process
 
-Build Packages Modules
+## Update Yarn
 
+yarn set version stable
+
+yarn install
+
+## Build Packages Modules
+
+### Build first package
 cd packages/webapp
 
 yarn install
 
 yarn build
+
+### Build second package
+
 
 cd packages/server
 
@@ -15,8 +25,7 @@ yarn install
 yarn build
 
 
-Build Multi-module
-
+### Build Multi-module
 
 cd ../..
 
