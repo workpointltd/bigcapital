@@ -12,6 +12,7 @@ function initSystemKnex() {
     client: config.system.db_client,
     connection: {
       host: config.system.db_host,
+      port: config.system.db_port,
       user: config.system.db_user,
       password: config.system.db_password,
       database: config.system.db_name,
@@ -33,6 +34,7 @@ function initTenantKnex(organizationId) {
     client: config.tenant.db_client,
     connection: {
       host: config.tenant.db_host,
+      port: config.tenant.db_port,
       user: config.tenant.db_user,
       password: config.tenant.db_password,
       database: `${config.tenant.db_name_prefix}${organizationId}`,
